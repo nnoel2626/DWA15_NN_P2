@@ -1,5 +1,5 @@
 
-<?php require('P2_logic.php'); ?><!-- Link to the PHP logic page-->
+<?php require('P2_logic2.php'); ?><!-- Link to the PHP logic page-->
 
 <!DOCTYPE html>
 
