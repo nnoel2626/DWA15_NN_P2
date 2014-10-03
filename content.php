@@ -18,41 +18,37 @@
 						<option value="9">9</option>
 						<option value="10">10</option>
 						<option value="11">11</option>
-						<option value="12">12</option>
+						<option value="12">12</option><!--Field to enter how many words for password -->
 						</select>
 						<br>
 				
 		   				<label for='firstL_cap'>Include Capital Letters</label>
-		                <input type='checkbox' name='firstL_cap' id='firstL_cap' <?php if (isset($_POST['firstL_cap'])) echo "checked" . " " . "value='y'"; ?>><!--Checbox to add numerical value to password -->          
-					
-						<br>
+		                <input type='checkbox' name='firstL_cap' id='firstL_cap' <?php if (isset($_POST['firstL_cap'])) echo "checked" . " " . "value='y'"; ?>>
+						<br><!--Checbox to add numerical value to password -->          
 					
 						<label for='add_number'>Add Numbers</label>
-						<input type='checkbox' name='add_number' id='add_number' <?php if (isset($_POST['add_number'])) echo "checked" . " " . "value='y'"; ?> > <!--Checbox to add numerical value to password -->
-					
-						<br>
+						<input type='checkbox' name='add_number' id='add_number' <?php if (isset($_POST['add_number'])) echo "checked" . " " . "value='y'"; ?>> 
+						<br><!--Checbox to add numerical value to password -->
 				
 						<label for='add_symbol'>Add Symbols</label>
-						<input type='checkbox' name='add_symbol' id='add_symbol'<?php if (isset($_POST['add_symbol'])) echo "checked" . " " . "value='y'"; ?>> <!--Checbox to add special symbol to password -->
-					
+						<input type='checkbox' name='add_symbol' id='add_symbol'<?php if (isset($_POST['add_symbol'])) echo "checked" . " " . "value='y'"; ?>> 
+							<!--Checbox to add special symbol to password -->
 					</fieldset>
 				
 					<fieldset>
 					
 					<h3> Generate an new password</h3>
-					
-					<input type="submit" name="generate"  value="generate"/><!--Each time the submit button is pressed it will generate a new passwor-->       
+					<!--Each time the submit button is pressed it will generate a new passwor-->       
+					<input type="submit" name="generate"  value="generate"/>
 					
 					</fieldset>
-					
-					
 				
 					<p align="center" style= "color:red"><strong><?php error_reporting(0); if (isset($password)){echo "The generated password is:".$password;
 					
 					echo "<br>Your passphrase is: " . $finalProverb;} ?></strong></input>
+					<!-- Display both the generated password and passphrase-->
 					</p>
-					
-					
+										
 					</form>
 					
 			

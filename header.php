@@ -10,6 +10,7 @@
 	
 		
 	<link rel="stylesheet" href="styles/pass_gen2.css">
+	<!--link to css style sheet which is in the styles directory -->
 		<style type="text/css"></style>
 </head>
 
