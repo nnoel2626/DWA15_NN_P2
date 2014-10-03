@@ -14,5 +14,8 @@ The prov_phrase.txt contains a list of proverbs as memory aid that should help t
 	*add some random number to the string.(1-9)  
 	*add some random symbol to the string.( .-+=_,!@$#)
 	
+	
+I will demo my project during the section on Tuesday> and the web url: p2.nnoel-phpsite.me
+	
 
 
