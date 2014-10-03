@@ -5,11 +5,13 @@
 
 		<?php include('header.php'); ?>
  	
-     	<body>      
+     	<body>  
+     	<div>    
         	<?php include('content.php'); ?>
                
         	<?php include('footer.php'); ?>
- 		
+ 			 
+     	</div>
 		</body>
         
  	<script type="text/javascript"></script>  

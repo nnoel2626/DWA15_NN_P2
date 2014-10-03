@@ -40,30 +40,53 @@ if ($paramCount > 0) //Or if $paramCount (post) have been submited//
 	// above three lines can be written as: $finalProverb = $qualifiedProverbs[rand (0, count($qualifiedProverbs))];
 
 	/* ***** Initialise $password Variable and Set Capitalization ***** */
-	//$proverbWords = explode(" ", trim($finalProverb));								// break down proverb into words
+	$proverbWords = explode(" ", trim($finalProverb));								// break down proverb into words
 
-	foreach ($proverbWords as $word)
-	{              
-          $letter = strtolower ($word[0]);
-                
-       	if (isset($_POST['firstL_cap']) && rand(0, 1))
-            $letter = strtoupper ($letter);
+	foreach ($proverbWords as $word)											// iterate over proverb words
+	{	
+	$letter = strtolower ($word[0]);										// initialize temporary letter variable
+
+	if (isset($_POST['firstL_cap']) && rand(0, 1))							// if capitalization check box is checked and random boolean selection is true
+		$letter = strtoupper ($letter);										// capitalize letter
+
+	$password .= $letter;													// add letter to password
+	}
 
 
 	/* ***** Add Numerals ***** */
-		if (isset($_POST['add_number']) && rand(0, 1))
-           $post_number .= rand (0, 9);
+	if (isset($_POST['add_number']))												// if user wants numbers
+	{
+
+	$numberOfNumeralsToAdd = rand (1, 4);									// randomly choose how many to add (1-4)
 	
+	for ($i = 0; $i < $numberOfNumeralsToAdd; $i++)							// loop the amount of numbers that need adding
+		$password .= rand (0, 9);											// add a random number to password
+	}
+
+	/*
+	* alternative code:
+	*
+	if (isset($_POST['numeric']))
+	{
+	for ($i = rand (1, 4); $i > 0; $i--)
+		$password .= rand (0, 9);
+	}
+
+	*/
+
 
 
 	/* ***** Add Special Chars ***** */
-	 	if (isset($_POST['add_symbol']) && rand(0, 1))
-           $post_symbol .= $special[rand (0, strlen($special) - 1)];
-
-           $password .= $letter;
+	if (isset($_POST['add_symbol']))												// if user want special chars
+	{
+	$numberOfSpecialCharsToAdd = rand (1, 3);	
+																				// randomly choose how many to add (1-3)
+	for ($i = 0; $i < $numberOfSpecialCharsToAdd; $i++)						// loop the amount of special chars that need adding
+		$password .= $special[rand (0, strlen($special) -1)];					// add a random special character to password
+	}
 
 	/* ***** Display the New Password ***** */
-	}
+	
 
 }
  ?>

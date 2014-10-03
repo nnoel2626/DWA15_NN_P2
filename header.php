@@ -8,7 +8,8 @@
 	<meta name="rating" content="General" />		
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
 	
-	<link rel="stylesheet" href="styles/pass_gen.css">
+		
+	<link rel="stylesheet" href="styles/pass_gen2.css">
 		<style type="text/css"></style>
 </head>
 
