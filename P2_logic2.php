@@ -51,8 +51,6 @@ if ($paramCount > 0) //Or if $paramCount (post) have been submited//
 
 	$password .= $letter;													// add letter to password
 	}
-
-
 	/* ***** Add Numerals ***** */
 	if (isset($_POST['add_number']))												// if user wants numbers
 	{
@@ -62,8 +60,17 @@ if ($paramCount > 0) //Or if $paramCount (post) have been submited//
 	for ($i = 0; $i < $numberOfNumeralsToAdd; $i++)							// loop the amount of numbers that need adding
 		$password .= rand (0, 9);											// add a random number to password
 	}
-
 	
+	/*
+	* alternative code:
+	*
+	if (isset($_POST['numeric']))
+	{
+	for ($i = rand (1, 4); $i > 0; $i--)
+		$password .= rand (0, 9);
+	}
+
+	*/
 
 	/* ***** Add Special Chars ***** */
 	if (isset($_POST['add_symbol']))												// if user want special chars

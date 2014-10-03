@@ -1,6 +1,6 @@
+
     body {
         background: none repeat scroll 0 0 #222222;/* Css for the background color */ 
-        
         }
 
     .container {
@@ -15,7 +15,7 @@
         padding: 50px 30px 50px;
         width: 900px;
         height: auto;
-    }/* Css for the container which is the actula shape and color of the form */
+        }/* Css for the container which is the actula shape and color of the form */
 
     h1 { /* Css for the title of the XKCD Password generator  */
         color: #660000;
@@ -39,16 +39,24 @@
 
          }
 
-.password { /* Css for "Create a very secure password that you will always remember !! "form" */
+    h2 { /* Css for "Create a very secure password that you will always remember !! "form" */
             font-size:22px;
             font-weight:800;    
             text-align:left;
             color:black;
+
+.password { 
+            font-size:22px;
+            font-weight:800;    
+            text-align:left;
+            color:#black;
+
             padding:15px;
             margin:  10px 10px 10px;
             }
   
- fieldset{ /* Css for the rectangle shape of the user input field and generate button */
+
+ fieldset		{ /* Css for the rectangle shape of the user input field and generate button */
             display: block;
             color: #660000;
             margin: 10px 10px 10px 10px;
@@ -56,12 +64,14 @@
             padding-bottom: 0.625em;
             padding-left: 0.75em;
             padding-right: 0.75em;
-            border: 2px groove (internal value);
+            
  }           
+
 
 
         p { /* Css for the password and passphrase display are */
             margin: 10px;
             padding: 5px;
 }
+
 

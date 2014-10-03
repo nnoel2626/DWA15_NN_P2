@@ -3,17 +3,25 @@
 
 <!DOCTYPE html>
 
-		<?php include('header.php'); ?><!-- Link to the PHP logic page-->
+		
  	
      	<body>  
      	<div>    
-        	<?php include('content.php'); ?><!-- Link to content page-->
+        	
+ 	
+     	<body>  
+     	<div> 
+     	   <?php include('header.php'); ?><!-- Link to header.php page-->
+        	
+        	<?php include('content.php'); ?><!-- Link to content.php javascript  file--> 
                
-        	<?php include('footer.php'); ?><!-- Link to footer page-->
- 			 
+        	<?php include('footer.php'); ?><!-- Link to footr.php  file--> 
+
      	</div>
 		</body>
-        
+
  	<script type="text/javascript"></script> <!-- Link to future javascript  file--> 
+
  
-</html>
+ 
+</html>`
