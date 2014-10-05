@@ -15,7 +15,7 @@
         padding: 50px 30px 50px;
         width: 900px;
         height: auto;
-        }/* Css for the container which is the actula shape and color of the form */
+        }/* Css for the container which is the actual shape and color of the form */
 
     h1 { /* Css for the title of the XKCD Password generator  */
         color: #660000;
@@ -56,9 +56,8 @@
             }
   
 
- fieldset		{ /* Css for the rectangle shape of the user input field and generate button */
+ fieldset		{ /* Css for the rectangle shape of the user input field and generate button area*/
             display: block;
-            color: #660000;
             margin: 10px 10px 10px 10px;
             padding-top: 0.35em;
             padding-bottom: 0.625em;
